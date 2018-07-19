@@ -3,13 +3,11 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const Posts = () => {
-    return (
-        <div>   
-            <Link to='/posts/1'> posts 1</Link><br/>
-            <Link to='/posts/2'>posts 2</Link><br/>
-            <Link to='/posts/3'>posts 32</Link><br/>
-        </div>  
-    );
+    return [
+        <div key='1'>Hello</div>,
+        <h1 key='2'>I am</h1>,
+        <h3 key='3'>a React app</h3>
+    ]
 }
 
 export default Posts; 

@@ -1,6 +1,6 @@
-import React, { Component } from 'react';
+import React, { PureComponent } from 'react';
 
-export default class Lifecycles extends Component {
+export default class Lifecycles extends PureComponent {
     // stage 1: get default props
     
     // stage 2: set state
@@ -9,9 +9,9 @@ export default class Lifecycles extends Component {
     }
 
     // stage 3: before render
-    componentWillMount() {
-        console.log('Before render');
-    }
+    // componentWillMount() {
+    //     console.log('Before render');
+    // }
 
     // stage 4: render
     render() {
@@ -27,29 +27,29 @@ export default class Lifecycles extends Component {
         ); 
     }
 
-    // stage 5: after render
-    componentDidMount() {
-        console.log('After render');
-    }
+    // // stage 5: after render
+    // componentDidMount() {
+    //     console.log('After render');
+    // }
 
-    // more lifecycle methods
-    componentWillUpdate() {
-        console.log('Before update');
-    }
+    // // more lifecycle methods
+    // componentWillUpdate() {
+    //     console.log('Before update');
+    // }
     
-    componentDidUpdate() {
-        console.log('After update');
-    }
+    // componentDidUpdate() {
+    //     console.log('After update');
+    // }
 
-    shouldComponentUpdate(nextProps, nextState) {
-        return nextState.title !== 'something else';
-    }
+    // shouldComponentUpdate(nextProps, nextState) {
+    //     return nextState.title !== 'something else';
+    // }
 
-    componentWillReceiveProps() {
-        console.log('Before receiving props');
-    }
+    // componentWillReceiveProps() {
+    //     console.log('Before receiving props');
+    // }
 
-    componentWillUnmount() {
-        console.log('Unmounting');
-    }
+    // componentWillUnmount() {
+    //     console.log('Unmounting');
+    // }
 }
